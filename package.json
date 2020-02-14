@@ -1,5 +1,5 @@
 {
-  "name": "jsonpaginate",
+  "name": "paginatejson",
   "version": "1.0.0",
   "description": "receive an array and return it paginated",
   "main": "index.js",
