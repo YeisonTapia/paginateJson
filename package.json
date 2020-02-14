@@ -1,12 +1,12 @@
 {
-  "name": "functions",
+  "name": "jsonpaginate",
   "version": "1.0.0",
-  "description": "",
+  "description": "receive an array and return it paginated",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Yeison Tapia <yftapial@ut.edu.co>",
   "license": "ISC"
 }

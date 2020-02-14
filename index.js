@@ -1,57 +1,26 @@
-const utils = require('./utils')
+exports.paginate = function (array, page, perPage) {
+  let obj = {}
+  let start = (page - 1) * perPage
+  let end = page * perPage
 
-const posts = [
-  {
-    "id": 1,
-    "title": "One",
-    "author": "I"
-  },
-  {
-    "id": 2,
-    "title": "two",
-    "author": "I"
-  },
-  {
-    "id": 3,
-    "title": "three",
-    "author": "I"
-  },
-  {
-    "id": 4,
-    "title": "three",
-    "author": "I"
-  },
-  {
-    "id": 5,
-    "title": "three",
-    "author": "I"
-  },
-  {
-    "id": 6,
-    "title": "three",
-    "author": "I"
-  },
-  {
-    "id": 7,
-    "title": "three",
-    "author": "I"
-  },
-  {
-    "id": 8,
-    "title": "three",
-    "author": "I"
-  },
-  {
-    "id": 9,
-    "title": "three",
-    "author": "I"
+  obj.items = [...array].slice(start, end)
+  if (obj.items.length === 0) {
+    return obj
   }
-]
 
-const page = utils.getPage(posts, 1, 5)
+  if (page > 1) {
+    obj.prev = page - 1
+  }
 
-console.warn(page)
+  if (end < array.length) {
+    obj.next = page + 1
+  }
 
+  if (obj.items.length !== array.length) {
+    obj.current = page
+    obj.first = 1
+    obj.last = Math.ceil(array.length / perPage)
+  }
 
-
-
+  return obj
+}
