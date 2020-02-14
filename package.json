@@ -1,6 +1,6 @@
 {
   "name": "paginatejson",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "receive an array and return it paginated",
   "main": "index.js",
   "scripts": {
