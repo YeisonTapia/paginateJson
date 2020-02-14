@@ -2,6 +2,12 @@
 
 This small library allows you to easily page an array.
 
+### Install
+
+```
+npm i paginatejson
+```
+
 ### Arguments:
 
 * array: Array that needs to be paginated.
