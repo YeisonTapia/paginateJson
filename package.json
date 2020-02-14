@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "Yeison Tapia <yftapial@ut.edu.co>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.0.1"
+  }
 }
