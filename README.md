@@ -1,4 +1,4 @@
-# JsonPaginate 📖
+# paginateJson 📖
 
 This small library allows you to easily page an array.
 

@@ -2,11 +2,20 @@
   "name": "paginatejson",
   "version": "1.0.2",
   "description": "receive an array and return it paginated",
+  "homepage": "https://github.com/YeisonTapia/paginateJson#readme",
+  "bugs": { 
+    "url" : "https://github.com/YeisonTapia/paginateJson/issues", 
+    "email" : "yftapial@ut.edu.co"
+  },
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec"
   },
-  "keywords": [],
+  "repository": "https://github.com/YeisonTapia/paginateJson",
+  "keywords": [
+    "paginate",
+    "json"
+  ],
   "author": "Yeison Tapia <yftapial@ut.edu.co>",
   "license": "ISC",
   "dependencies": {
