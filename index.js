@@ -4,7 +4,7 @@ exports.paginate = function(array, page, perPage, dataItem, jsonData) {
     let end = page * perPage
 
     if (dataItem !== undefined && jsonData !== undefined) {
-        array = validateData(array, jsonData, dataItem);
+        array = filterData(array, jsonData, dataItem);
     }
 
     obj.items = [...array].slice(start, end)
@@ -29,7 +29,7 @@ exports.paginate = function(array, page, perPage, dataItem, jsonData) {
     return obj
 }
 
-function validateData(array, jsonData, dataItem) {
+function filterData(array, jsonData, dataItem) {
     return array.filter(
         function(data) {
             if (typeof jsonData === 'string' && isNaN(jsonData) && isNaN(data[dataItem])) {
