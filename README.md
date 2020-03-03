@@ -18,7 +18,7 @@ npm i paginatejson
 ### Example Use
 
 ```js
-let paginate = require('paginatejson')
+let paginatejson = require('paginatejson')
 
 let posts = [
     {
@@ -68,7 +68,7 @@ let posts = [
       }
 ]
 
-let result = paginate.paginate(posts, 1, 5)
+let result = paginatejson.paginate(posts, 1, 5)
 
 console.log(result)
 /* 
