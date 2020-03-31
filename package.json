@@ -3,9 +3,9 @@
   "version": "1.0.3",
   "description": "receive an array and return it paginated",
   "homepage": "https://github.com/YeisonTapia/paginateJson#readme",
-  "bugs": { 
-    "url" : "https://github.com/YeisonTapia/paginateJson/issues", 
-    "email" : "yftapial@ut.edu.co"
+  "bugs": {
+    "url": "https://github.com/YeisonTapia/paginateJson/issues",
+    "email": "yftapial@ut.edu.co"
   },
   "main": "index.js",
   "scripts": {
